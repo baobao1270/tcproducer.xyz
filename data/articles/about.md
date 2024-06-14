@@ -9,7 +9,6 @@ title: 关于本站
 <h2 id="about-me">关于「传输控制协议 TCP」</h2>
 
  - Naïve Vocaloid Producer
- - Co-founder of [vcmusic.org](https://vcmusic.org)
  - Full Stack Developer
 
 <h2 id="name-of-me">名字由来</h2>
