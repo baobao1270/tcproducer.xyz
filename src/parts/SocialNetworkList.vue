@@ -21,12 +21,12 @@ const { social_networks, contact_email } = $site
           </ClientOnly>
         </li>
         <li>
-          <RouterLink to="/novels/list" title="Articles">
+          <RouterLink to="/novels/list" title="小说">
             <FontAwesomeIcon :icon="['fas', 'newspaper']" />
           </RouterLink>
         </li>
         <li>
-          <RouterLink to="/artworks" title="Artworks">
+          <RouterLink to="/artworks" title="歌声合成工程">
             <FontAwesomeIcon :icon="['fas', 'circle-right']" />
           </RouterLink>
         </li>

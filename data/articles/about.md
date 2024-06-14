@@ -23,9 +23,9 @@ title: 关于本站
  - 作为 _传输控制协议_ 缩写的 _TCP_
  - 作为名为 _TCP_ 的 _Vocaloid Producer_，根据 V 家传统以 _P_ 为后缀
 
-<h2 id="artwork-readme">关于本站配布虚拟歌手作品的说明</h2>
+<h2 id="artwork-readme">关于本站配布歌声合成工程的说明</h2>
 
-本站配布「传输控制协议 TCP」的虚拟歌手作品相关文件，包括原始的工程文件、视频和音频等。
+本站配布「传输控制协议 TCP」的歌声合成工程相关文件，包括原始的工程文件、视频和音频等。
 
 您可以使用 [UtaFormatix](https://sdercolin.github.io/utaformatix3/) 进行工程格式转换。
 
