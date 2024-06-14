@@ -1,0 +1,34 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  DEPLOY_USER: github-actions
+  DEPLOY_HOST: tcproducer.xyz
+  DEPLOY_PATH: /srv/web/default/dist
+  DEPLOY_HOST_KEY: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOs+X17Kr+Dce8Yf5pNiNYqso6Xzj++VZAFGk/+fF9bv
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Build & Deploy
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install
+      - run: npm run build
+      - name: Deploy
+        run: |
+          rm -rf dist/.vite
+          DEPLOY_KEY=$(mktemp)
+          KNOWN_HOSTS=$(mktemp)
+          chmod 600 $DEPLOY_KEY
+          echo $DEPLOY_HOST $DEPLOY_HOST_KEY > $KNOWN_HOSTS
+          echo "${{ secrets.DEPLOY_KEY }}" | base64 -d > $DEPLOY_KEY
+          rsync -avz --delete dist/ $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH -e \
+            "ssh -i $DEPLOY_KEY -o CheckHostIP=no -o StrictHostKeyChecking=yes -o VerifyHostKeyDNS=yes -o UserKnownHostsFile=$KNOWN_HOSTS -v"

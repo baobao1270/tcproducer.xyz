@@ -1,0 +1,105 @@
+- id:       2101
+  title:    米店
+  singer:   洛天依
+  original: 李志
+  engine:   V5
+  external:
+    - platform: bilibili
+      resource: av806053930
+  attachments:
+    - type: project
+      spec: "VPR, 有参, 伴奏"
+    - type: audio
+      spec: "FLAC, 16bit/44.1kHz"
+- id:       2103
+  title:    不晚
+  singer:   洛天依
+  original: 纯白
+  engine:   V4
+  external:
+    - platform: bilibili
+      resource: av933844132
+  attachments:
+    - type: project
+      spec: "VPR, 有参, 伴奏, 原PV"
+    - type: audio
+      spec: "FLAC, 16bit/44.1kHz"
+- id:       2105
+  title:    桂河大桥进行曲
+  singer:   SV口哨
+  engine:   Synthesizer V
+  external:
+    - platform: bilibili
+      resource: av337033028
+  attachments:
+    - type: project
+      spec: "SVP, 无参"
+- id:       2201
+  title:    我是山里小歌手
+  singer:   乐正绫AI
+  engine:   ACE
+  external:
+    - platform: bilibili
+      resource: av1553228214
+    - platform: youtube
+      resource: 2ejGH6TH1Ls
+  attachments:
+    - type: project
+      spec: "VPR, 无参; ACEP (OpenJSON+Zstd), 有参, 伴奏"
+    - type: audio
+      spec: "FLAC, 24bit/48kHz"
+    - type: video
+      spec: "3840x2160@30, H.264, 2.5Mbps; LPCM"
+- id:       2301
+  title:    故事太短 余生很长
+  singer:   洛天依AI
+  original: 煊宇
+  engine:   ACE
+  external:
+    - platform: bilibili
+      resource: av945501881
+    - platform: youtube
+      resource: a3ol_KQrffA
+    - platform: vsqx.top
+      resource: vn7542
+  attachments:
+    - type: project
+      spec: "MIDI; ACEP (Encrypted), 有参, 伴奏"
+    - type: audio
+      spec: "FLAC, 24bit/48kHz"
+    - type: video
+      spec: "1920x1080@30, H.264, 6Mbps; AAC 320kbps"
+- id:       2302
+  title:    詩
+  singer:   夏語遙SV
+  original: 心華
+  engine:   Synthesizer V
+  external:
+    - platform: bilibili
+      resource: av223006596
+    - platform: youtube
+      resource: pWZh5QEK_3U
+    - platform: vsqx.top
+      resource: vn7541
+  attachments:
+    - type: project
+      spec: "SVP, 有参, 伴奏 (by 敌门)"
+    - type: audio
+      spec: "FLAC, 24bit/96kHz"
+- id:       2308
+  title:    音符成诗
+  singer:   心華DS
+  original: 心華
+  engine:   DiffSinger
+  external:
+    - platform: bilibili
+      resource: av906098662
+    - platform: youtube
+      resource: aLjBvSCu_6U
+    - platform: vsqx.top
+      resource: vn7713
+  attachments:
+    - type: project
+      spec: "USTX, 无参, 伴奏"
+    - type: audio
+      spec: "FLAC, 24bit/96kHz"

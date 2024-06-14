@@ -1,0 +1,38 @@
+{
+  "name": "tcproducer.xyz",
+  "private": true,
+  "author": "传输控制协议 TCP <luoty8@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "repository": "github:baobao1270/tcproducer.xyz",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite-ssg build",
+    "clean": "tsx build/clean.ts",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-brands-svg-icons": "^6.5.2",
+    "@fortawesome/free-regular-svg-icons": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/vue-fontawesome": "^3.0.8",
+    "markdown-it": "^14.1.0",
+    "markdown-it-meta": "^0.0.1",
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "@types/node": "^20.13.0",
+    "@types/markdown-it": "^14.1.1",
+    "@unhead/vue": "^1.9.11",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "tsx": "^4.15.4",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vite-plugin-minify": "^1.5.2",
+    "vite-ssg": "^0.23.7",
+    "vue-router": "^4.3.2",
+    "vue-tsc": "^2.0.6",
+    "yaml": "^2.4.2"
+  }
+}

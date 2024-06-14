@@ -1,0 +1,32 @@
+name:          传输控制协议 TCP
+title:         传输控制协议 TCP 的网站
+slogan:        虽然说胆小了不少 可月亮还想伸手要
+source:        https://github.com/baobao1270/tcproducer.xyz
+canonical:     https://tcproducer.xyz/
+description:   传输控制协议 TCP 的个人网站，用于作品展示、联系交流或发布 TCP 的作品。
+contact_email: luoty8@gmail.com
+
+social_networks:
+  - name: 哔哩哔哩
+    icon: brands/bilibili
+    url:  https://space.bilibili.com/1425000748
+  - name: YouTube
+    icon: brands/youtube
+    url:  https://www.youtube.com/@tcp_roducer
+  - name: Twitter
+    icon: brands/twitter
+    url:  https://twitter.com/tcp_roducer
+  - name: QQ
+    icon: brands/qq
+    url:  https://qm.qq.com/q/cHBXwVjKTY&personal_qrcode_source=3
+  - name: VSQX.TOP
+    icon: solid/bars-progress
+    url:  https://www.vsqx.top/space/2822
+
+footer:
+  - name: 关于本站
+    url:  /about
+  - name: 版权声明
+    url:  /copyright
+  - name: 隐私政策
+    url:  /privacy
