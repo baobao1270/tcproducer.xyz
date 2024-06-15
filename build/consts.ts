@@ -25,4 +25,5 @@ export const REQUIRED_ICONS = [
 
   // Content
   'regular/circle-up',
+  'solid/spinner',
 ]
