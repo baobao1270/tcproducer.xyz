@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import FontAwesomeIcon from '@/icon'
+import { NavigationItem } from '@common/types'
 
 defineProps<{
-  title: string
-  showBackTop: boolean
+  title: string,
+  showBackTop: boolean,
+  nav: NavigationItem[]
 }>()
 
 function onScrollToTop() {
@@ -22,8 +24,11 @@ function onScrollToTop() {
   <nav>
     当前位置：
     <RouterLink to="/">首页</RouterLink>
-    &nbsp;/&nbsp;
-    {{ title }}
+    <span v-for="(item, index) in nav" :key="index">
+      &nbsp;/&nbsp;
+      <span v-if="typeof item === 'string'">{{ item }}</span>
+      <RouterLink :to="item.url" v-else>{{ item.name }}</RouterLink>
+    </span>
   </nav>
   <main class="global-content">
     <article>

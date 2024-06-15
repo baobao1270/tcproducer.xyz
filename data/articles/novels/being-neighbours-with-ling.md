@@ -1,5 +1,7 @@
 ---
-title: 【中V同人短篇】比绫而居
+title: 比绫而居
+novel: short
+copyright_year: 2024
 ---
 
 记2024年4月13日及5月22日所梦

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import FontAwesomeIcon from '@/icon'
 import { parseIcon } from '@/icon'
+import SocialNetworkLink from '@/parts/SocialNetworkLink.vue'
 const { social_networks, contact_email } = $site
 </script>
 
@@ -8,28 +8,16 @@ const { social_networks, contact_email } = $site
   <section>
     <nav>
       <ul>
-        <li v-for="platform in social_networks" :key="platform.name">
-          <a target="_blank" :href="platform.url" :title="platform.name">
-            <FontAwesomeIcon :icon="parseIcon(platform.icon)" />
-          </a>
-        </li>
-        <li>
-          <ClientOnly>
-            <a :href="`mailto:${contact_email}`" title="Email">
-              <FontAwesomeIcon :icon="['fas', 'envelope']" />
-            </a>
-          </ClientOnly>
-        </li>
-        <li>
-          <RouterLink to="/novels/list" title="小说">
-            <FontAwesomeIcon :icon="['fas', 'newspaper']" />
-          </RouterLink>
-        </li>
-        <li>
-          <RouterLink to="/artworks" title="歌声合成工程">
-            <FontAwesomeIcon :icon="['fas', 'circle-right']" />
-          </RouterLink>
-        </li>
+        <SocialNetworkLink v-for="platform in social_networks" :key="platform.name"
+          :title="platform.name" :to="platform.url" :icon="parseIcon(platform.icon)" />
+        <ClientOnly>
+          <SocialNetworkLink :to="`mailto:${contact_email}`" :icon="['fas', 'envelope']"
+            title="电子邮箱" />
+        </ClientOnly>
+        <SocialNetworkLink to="/novels"   :icon="['fas', 'newspaper']"
+          title="小说" />
+        <SocialNetworkLink to="/artworks" :icon="['fas', 'circle-right']"
+          title="工程配布" />
       </ul>
     </nav>
   </section>
@@ -53,28 +41,10 @@ section nav ul {
   overflow: hidden;
 }
 
-section nav ul a {
-  display: flex;
-  font-size: 2rem;
-  opacity: .75;
-  color: #007acc;
-  transition: all .3s ease-in;
-}
-
-section nav ul a:hover {
-  color: #129efc;
-  opacity: .5;
-  transition: all .3s ease-out;
-}
-
 @media screen and (max-width: 600px) {
   section nav ul {
     padding: 1rem;
     gap: 1.5rem 2rem;
-  }
-
-  section nav ul a {
-    font-size: 1.8rem;
   }
 }
 </style>

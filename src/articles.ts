@@ -1,4 +1,4 @@
-import { Route } from "@/routes"
+import { Route } from '@/routes'
 import Article from '@/pages/Article.vue'
 
 const articles = Object
@@ -18,7 +18,6 @@ export function articleRoutes(): Route[] {
 
 export async function renderArticle(path: string): Promise<string> {
   const { renderMarkdown } = await import('@common/markdown')
-  console.log("articles", path)
   const loader = Object.fromEntries(articles)[path]
   if (!loader) return '找不到文章'
   const { default: markdownContent } = await loader()

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Artwork } from '@common/types'
-import { externalUrl, attachmentUrl } from '../../artworks'
+import { externalUrl, attachmentUrl } from '@/artworks'
 import ArtworkLink from './ArtworkLink.vue'
 
 defineProps<{ artwork: Artwork }>()

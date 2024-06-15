@@ -18,7 +18,12 @@ const contentHtml = await renderArticle(props.path)
   font-weight: 400;
 }
 
+.markdown-content hr {
+  border: #838383 solid 1px;
+}
+
 .markdown-content {
   line-height: 1.8;
+  padding-bottom: 5rem;
 }
 </style>

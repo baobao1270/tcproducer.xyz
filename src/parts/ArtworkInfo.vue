@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import FontAwesomeIcon from '@/icon'
 import { Artwork } from '@common/types'
-import { engineColor, singerColor, attachmentSpecIcon } from '../../artworks'
+import { engineColor, singerColor, attachmentSpecIcon } from '@/artworks'
 
 defineProps<{ artwork: Artwork }>()
 </script>

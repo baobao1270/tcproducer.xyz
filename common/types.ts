@@ -17,6 +17,8 @@ export interface Link {
   url: string;
 }
 
+export type NavigationItem = Link | string;
+
 export interface SocialNetworkLink extends Link {
   icon: string;
 }
