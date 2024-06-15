@@ -15,10 +15,10 @@ defineProps<{
       转载请注明此链接: <a :href="path">{{ title }}</a>
     </div>
     <div class="cc-badge">
-      <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CreativeCommons 许可证 Badge: CC">
-      <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="CreativeCommons 许可证 Badge: BY">
-      <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="CreativeCommons 许可证 Badge: NC">
-      <img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="CreativeCommons 许可证 Badge: ND">
+      <img src="@/assets/creativecommons/cc.svg" alt="CreativeCommons 许可证 Badge: CC">
+      <img src="@/assets/creativecommons/by.svg" alt="CreativeCommons 许可证 Badge: BY">
+      <img src="@/assets/creativecommons/nc.svg" alt="CreativeCommons 许可证 Badge: NC">
+      <img src="@/assets/creativecommons/nd.svg" alt="CreativeCommons 许可证 Badge: ND">
     </div>
   </p>
 </template>
