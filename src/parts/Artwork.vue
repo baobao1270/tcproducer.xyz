@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { Artwork } from '@common/types'
 import ArtworkInfo from './ArtworkInfo.vue'
-import ArtworkLinks from './ArtworkLinks.vue'
+import ArtworkLinkList from './ArtworkLinkList.vue'
 
 defineProps<{ artwork: Artwork }>()
 </script>
@@ -9,7 +9,7 @@ defineProps<{ artwork: Artwork }>()
 <template>
   <li class="artwork">
     <ArtworkInfo :artwork="artwork" />
-    <ArtworkLinks :artwork="artwork" />
+    <ArtworkLinkList :artwork="artwork" />
   </li>
 </template>
 
